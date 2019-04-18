@@ -1,0 +1,12 @@
+name = "Não Importa"
+license = "GPLv3"
+licenselink = "https://www.gnu.org/licenses/gpl-3.0.en.html"
+description = "A hugo theme"
+homepage = "https://github.com/integr8"
+tags = ["blog", "category"]
+features = ["blog", "technical", "personal"]
+min_version = 0.1
+
+[author]
+  name = "Fábio Luciano"
+  homepage = "https://github.com/fabioluciano"

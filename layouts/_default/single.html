@@ -1,0 +1,36 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+  {{ if eq .Type "artigo" }}
+    <div class="container">
+        <div class="row">
+            {{ partial "artigo.html" . }}
+        </div>
+    </div>
+  {{ else if eq .Type "mencao" }}
+    <div class="container">
+        <div class="row">
+            <div class="page-content">
+                {{ partial "mention.html" . }}
+            </div>
+        </div>
+    </div>
+    {{ else if eq .Type "pagina" }}
+      <div class="container">
+          <div class="row">
+              <div class="page-content">
+                  {{ partial "page.html" . }}
+              </div>
+          </div>
+      </div>
+      {{ else if eq .Type "projeto" }}
+        <div class="container">
+            <div class="row">
+                <div class="page-content">
+                    {{ partial "page.html" . }}
+                </div>
+            </div>
+        </div>
+  {{ else }}
+    What are you doing?
+  {{ end }}
+<!-- {{ partial "footer.html" . }} -->
