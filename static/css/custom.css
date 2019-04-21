@@ -176,6 +176,10 @@ ul#navbar>li.current>a {
   padding: 0.4em;
 }
 
+.post-content img {
+  max-width: 100%;
+}
+
 .post-content li {
   margin: 0.7em;
 }
