@@ -7,9 +7,10 @@
   <title>{{ .Site.Title }} - {{ .Title }}</title>
   <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta name="author" content="{{ .Site.Params.author }}">
-
   <meta name="generator" content="{{ .Hugo.Generator }}" />
   <meta name="robots" content="index,follow">
+  
+  {{ template "_internal/opengraph.html" . }}
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -30,4 +31,5 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/images/favicon.ico">
+  
 </head>

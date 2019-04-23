@@ -240,7 +240,6 @@ ul#navbar>li.current>a {
 /* footer */
 footer {
   margin-top: 4.0rem;
-  font-family: verdana, arial, helvetica, sans-serif;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
@@ -248,7 +247,7 @@ footer {
   letter-spacing: .2rem;
   line-height: 2.5rem;
   color: #eeeeee;
-  background-color: #5086e7;
+  background-color: #4a4a4a;
 }
 
 #copyright>a:hover {
